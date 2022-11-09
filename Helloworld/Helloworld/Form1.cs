@@ -26,5 +26,15 @@ namespace Helloworld
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dim ans, k, i As Integer
+            k = textBox1.Text
+            For i = 1 To 12
+                ans = i * k
+                textBox2.Text = textBox2.Text & k & " * " & i & " = " & ans & vbCrLf
+            Next
+        }
     }
 }
